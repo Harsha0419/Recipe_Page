@@ -1,0 +1,230 @@
+/*  fonts Import  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+    --Rose700: rgba(243,229,216,255);
+}
+
+body{
+    background-color: var(--Rose700);
+    height: 100vh;
+    display: flex;
+    font-family: "Outfit", sans-serif;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.card .img-recipe {
+    padding: 2rem;
+    overflow: hidden;
+}
+.card .img-recipe img{
+    border-radius: 0.625rem;
+}
+
+.card{
+    background-color: var(--White);
+    border-radius: 0.625rem;
+    max-width: 40rem;
+    margin-bottom: 2.5rem;
+}
+.recipe-info :first-child{
+    font-family: "Young Serif", serif;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    font-weight:400;
+    color: var(--Stone900);
+}
+.recipe-info p{
+    color: var(--Stone600);
+    font-weight:600;
+    font-family: "Outfit", sans-serif;
+    font-size: 12px;
+    margin-bottom: 1rem;
+    text-align: justify;
+    
+}
+.info{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+.prep-time{
+    margin-bottom: 2rem;
+    background-color: var(--Rose50);
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.prep-time h2{
+    
+    color: var(--Rose800);
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    font-family: "Outfit",sans-serif;
+    font-weight: 700;
+}
+
+.time-list{
+    margin-left: 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color:var(--Stone600)
+}
+
+li span{
+    color: var(--Stone900);
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+.Instructions .item{
+    display: flex;
+    text-align: justify;
+    font-size: 0.875rem;
+    color: var(--Stone600);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.Instructions span{
+    color: var(--Stone900);
+    font-weight: 600;
+}
+.Instructions .num{
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+    color: var(--Rose800);
+    font-weight: 600;
+}
+
+
+h2{
+    font-family: "Young Serif", serif;
+    color: var(--Rose800);
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.Ingredients-ul{
+    margin-left: 0.5rem;
+    margin-bottom: 1.5rem;   
+    list-style-position: inside;
+}
+li{
+    font-size: 0.9rem;
+    color:var(--Stone600);
+    font-weight: 500;
+    margin-bottom: 1.5rem; 
+}
+
+
+ul li{
+    margin-bottom: 0.5rem;
+}
+
+hr{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    border: 1px solid var(--Stone150);
+}
+.Nutrition > p{
+    color: var(--Stone600);
+    text-align: justify;
+    font-size: 0.875rem;
+    margin-bottom: 1.8rem;
+    margin-left: 0.3rem;
+    font-weight: 500;
+}
+
+.nutritable .nuttable{
+    display: flex;
+    border-bottom: 1px solid var(--Stone150);
+    margin-bottom: 1rem;
+}
+
+.nuttable > *{
+    color: var(--Stone600);
+    text-align: justify;
+    font-size: 0.875rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.nuttable p:last-child{
+    color: var(--Rose800);
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+/*
+
+*/
+.Nutrition .nuttable > *{
+    margin-right: auto;
+    text-align: justify;
+    width: 100px;
+}
+.nutritable .nuttable:last-child{
+    border-bottom: 0;
+}
+
+
+@media only screen and (max-width:540px) {
+    .card{
+        margin: 0;
+    
+
+    }
+    h1{
+        margin-top: 2rem;
+    }
+   
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .card .img-recipe{
+        padding: 0;
+        border-radius: 0;
+    }
+    .card .img-recipe img{
+        border-radius: 0;
+    }
+    .contribute{
+        margin-top: 2rem;
+    }
+}
+
+.contribute {
+    justify-content: center;
+    margin-bottom: 2rem;
+    
+}
+.contribute a {
+    color: var(--Rose800);
+    text-decoration: none;
+    margin:0.2rem;
+}
+.contribute a:hover{
+    color: black;
+    border-bottom: 1px solid black;
+    transition: all 0.2s ease-in-out;
+}
+
+
