@@ -41,7 +41,7 @@ img{
 .card{
     background-color: var(--White);
     border-radius: 0.625rem;
-    max-width: 40rem;
+    max-width: 30rem;
     margin-bottom: 2.5rem;
 }
 .recipe-info :first-child{
@@ -86,13 +86,15 @@ img{
     margin-left: 2.5rem;
     font-size: 0.9rem;
     font-weight: 500;
-    color:var(--Stone600)
+    color:var(--Stone600);
 }
+
 
 li span{
     color: var(--Stone900);
     font-weight: 600;
     margin-left: 0.5rem;
+    margin-right: 0.3rem;
 }
 .Instructions .item{
     display: flex;
@@ -122,21 +124,38 @@ h2{
     margin-bottom: 1rem;
 }
 .Ingredients-ul{
-    margin-left: 0.5rem;
-    margin-bottom: 1.5rem;   
-    list-style-position: inside;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;   
 }
-li{
+li::marker{
     font-size: 0.9rem;
-    color:var(--Stone600);
+    color:var(--Rose800);
     font-weight: 500;
     margin-bottom: 1.5rem; 
 }
 
+.Ingredients-ul p{
+    display: inline;
+    font-size: 0.875rem;
+    color: var(--Stone600);
+    font-weight: 500;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+}
+
+.Ingredients-ul li{
+    color: var(--Stone600);
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
 
 ul li{
     margin-bottom: 0.5rem;
 }
+
 
 hr{
     margin-bottom: 1.5rem;
@@ -164,6 +183,9 @@ hr{
     font-size: 0.875rem;
     margin-left: 2rem;
     margin-bottom: 1rem;
+    margin-right: auto;
+    text-align: justify;
+    width: 100px;
 }
 
 
@@ -175,11 +197,6 @@ hr{
 /*
 
 */
-.Nutrition .nuttable > *{
-    margin-right: auto;
-    text-align: justify;
-    width: 100px;
-}
 .nutritable .nuttable:last-child{
     border-bottom: 0;
 }
